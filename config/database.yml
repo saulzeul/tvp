@@ -1,0 +1,28 @@
+#default: &default
+#  adapter: postgresql
+#  encoding: unicode
+#  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#  username: postgres
+#  password: 1234
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: 
+  host: localhost 
+
+development:
+  <<: *default
+  database: backend-api-intranet_development
+
+test:
+  <<: *default
+  database: backend-api-intranet_test
+
+production:
+  <<: *default
+  database: backend-api-intranet_production
+  username: backend-api-intranet
+  password: <%= ENV['BACKEND-API-INTRANET_DATABASE_PASSWORD'] %>

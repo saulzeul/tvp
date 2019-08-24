@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  profile_config: false
+  user_config: false
+  area_config: false
+  general_config: false
+
+two:
+  name: MyString
+  profile_config: false
+  user_config: false
+  area_config: false
+  general_config: false

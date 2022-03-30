@@ -13,7 +13,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use mysql2 as the database for active record
 gem 'mysql2'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
